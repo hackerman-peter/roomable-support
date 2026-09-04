@@ -4,6 +4,12 @@ The preferred production origin is `https://roomable.deploid.now` on a dedicated
 Cloudflare Pages project. The GitHub repository remains a public fallback and
 source of truth.
 
+The dedicated `roomable-support` Pages project was created and deployed from
+commit `97f8d85c675b791ee9d9647b030a5aa7df6655e0` on 4 September 2026. Its
+temporary origin, `https://roomable-support.pages.dev`, passed live HTTP 200 and
+security-header checks for the home, privacy and terms routes. The branded
+hostname is not attached yet.
+
 ## Intended URLs
 
 - Home and support: `https://roomable.deploid.now/`
@@ -25,4 +31,3 @@ domains only after the custom hostname is live and each URL returns HTTP 200.
    public checks pass.
 5. Keep Google OAuth in Testing until its branding page is complete and a
    physical-device Google sign-in and account-deletion pass has succeeded.
-
