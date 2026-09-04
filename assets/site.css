@@ -1,0 +1,122 @@
+:root {
+  color-scheme: light dark;
+  --ink: #122a2d;
+  --muted: #526367;
+  --ocean: #218b91;
+  --paper: #f8f3e9;
+  --card: #ffffff;
+  --line: #d9dfdc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+main {
+  width: min(760px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 56px 0 72px;
+}
+
+header { margin-bottom: 36px; }
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.door {
+  position: relative;
+  width: 29px;
+  height: 34px;
+  border: 3px solid var(--ocean);
+  border-bottom-width: 5px;
+  border-radius: 3px 3px 2px 2px;
+}
+
+.door::after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  top: 14px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--ocean);
+}
+
+h1 {
+  margin: 26px 0 12px;
+  max-width: 660px;
+  font-size: clamp(38px, 8vw, 58px);
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  margin: 36px 0 10px;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+p, li { color: var(--muted); }
+a { color: var(--ocean); }
+
+.lead {
+  max-width: 650px;
+  margin: 0 0 30px;
+  font-size: 20px;
+}
+
+.card {
+  margin: 20px 0;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--card);
+}
+
+.card h2 { margin-top: 0; }
+.card p:last-child { margin-bottom: 0; }
+
+.button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 11px 17px;
+  border-radius: 999px;
+  background: var(--ocean);
+  color: white;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 15px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #edf6f4;
+    --muted: #bac8c7;
+    --paper: #091215;
+    --card: #111e21;
+    --line: #2b3b3e;
+    --ocean: #65c8cc;
+  }
+}
