@@ -2,6 +2,8 @@
 
 Roomable helps Australian room-rental landlords organise rooms, tenants, rent, utilities, bonds and signed agreements.
 
+Public support site: [roomable.deploid.now](https://roomable.deploid.now/)
+
 ## Get help
 
 Email [peter.liang.official@gmail.com](mailto:peter.liang.official@gmail.com?subject=Roomable%20support) with what you were trying to do, what happened, and your iPhone model. Please do not email tenancy agreements, passwords or other sensitive tenant information.
@@ -12,6 +14,6 @@ Email [peter.liang.official@gmail.com](mailto:peter.liang.official@gmail.com?sub
 - **Sharing a property:** A full owner can open Settings, choose a property, and invite a family member.
 - **Deleting an account:** Open Settings → Family access → Delete account. Roomable shows what will be removed before final confirmation.
 
-Read the [Roomable Privacy Policy](PRIVACY.md).
+Read the [Roomable Privacy Policy](https://roomable.deploid.now/privacy/).
 
-Read the [Roomable Terms of Use](TERMS.md).
+Read the [Roomable Terms of Use](https://roomable.deploid.now/terms/).
