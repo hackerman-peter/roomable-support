@@ -36,24 +36,11 @@ header { margin-bottom: 36px; }
   text-decoration: none;
 }
 
-.door {
-  position: relative;
-  width: 29px;
-  height: 34px;
-  border: 3px solid var(--ocean);
-  border-bottom-width: 5px;
-  border-radius: 3px 3px 2px 2px;
-}
-
-.door::after {
-  content: "";
-  position: absolute;
-  right: 4px;
-  top: 14px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--ocean);
+.brand-icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
 }
 
 h1 {
