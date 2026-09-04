@@ -13,3 +13,5 @@ Email [peter.liang.official@gmail.com](mailto:peter.liang.official@gmail.com?sub
 - **Deleting an account:** Open Settings → Family access → Delete account. Roomable shows what will be removed before final confirmation.
 
 Read the [Roomable Privacy Policy](PRIVACY.md).
+
+Read the [Roomable Terms of Use](TERMS.md).
