@@ -6,7 +6,7 @@ Roomable stores the rental records you choose to add so you and the people you a
 
 ## Information Roomable stores
 
-Roomable may store your account name, email address and user identifier; property addresses and room details; tenant names, contact details and notes; tenancy dates; rent, payment, receipt, utility and bond records; and tenancy agreement PDFs you choose to upload.
+Roomable may store your account name, email address and user identifier; property addresses and room details; tenant names, contact details and notes; tenancy dates; rent, payment, receipt, utility and bond records; and tenancy agreement PDFs you choose to upload. When you use Google sign-in, Google's sign-in software may also process limited account, device, coarse-location, usage and diagnostic information to authenticate you and operate that service.
 
 ## How the information is used
 
@@ -14,7 +14,7 @@ The information is used only to provide Roomable’s features: signing in, synci
 
 ## Service providers
 
-Roomable uses Supabase for authentication, database storage and private document storage. If you choose Google or Apple sign-in, that provider processes the sign-in according to its own privacy policy. Roomable receives only the account information required to authenticate you.
+Roomable uses Supabase for authentication, database storage and private document storage. If you choose Google or Apple sign-in, that provider processes the sign-in according to its own privacy policy. Roomable receives only the account information required to authenticate you. Roomable does not run advertising or behavioural product analytics; Google's sign-in software may process limited identifiers, usage and diagnostic information for authentication-service analytics, as declared in its Apple privacy manifest.
 
 ## Sharing and access
 
