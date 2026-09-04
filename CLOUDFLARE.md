@@ -15,7 +15,9 @@ The production Worker was first deployed from commit
 `6f126bb8-4506-4829-9393-9c8fee11f908`. Cloudflare created the isolated
 `roomable.deploid.now` DNS record and certificate. The home, privacy and terms
 routes all returned HTTP 200 over HTTPS, junk paths returned 404, and custom
-security and asset-cache headers were present.
+security and asset-cache headers were present. The static site now sends a
+same-origin content security policy, frame denial, HSTS, restrictive browser
+permissions and MIME-sniffing protection.
 
 ## Intended URLs
 
