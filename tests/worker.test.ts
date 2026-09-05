@@ -78,10 +78,23 @@ describe("Roomable private report hosting", () => {
     expect(backend).toHaveBeenCalledTimes(2);
   });
 
-  it.each(["/", "/privacy/", "/terms/"])("preserves the existing public page %s", async (path) => {
+  it.each(["/", "/support/", "/privacy/", "/terms/"])("preserves the existing public page %s", async (path) => {
     const response = await open(path);
     expect(response.status).toBe(200);
     expect(await response.text()).toContain("Roomable");
+  });
+
+  it("serves the pre-release marketing page without fictional endorsements or dead download claims", async () => {
+    const html = await (await open("/")).text();
+    expect(html).toContain("Keep every room’s rent and shared bills");
+    expect(html).toContain("Coming to the App Store");
+    expect(html).toContain('href="/support/"');
+    expect(html).not.toContain("<blockquote");
+    expect(html).not.toContain("app-store-5-stars.png");
+    expect(html).not.toContain("apps.apple.com/app/");
+    for (const path of ["/assets/marketing/runtime.js", "/assets/marketing/react.js", "/assets/marketing/react-dom.js", "/assets/web/today.png", "/assets/film/roomable-preview-landscape.mp4", "/assets/film/roomable-preview-portrait.mp4"]) {
+      expect((await open(path)).status).toBe(200);
+    }
   });
 
   it("keeps unknown non-report paths as 404", async () => {
@@ -95,7 +108,7 @@ describe("Roomable private report hosting", () => {
     expect(privacy).toContain("five more minutes");
     expect(privacy).toContain("condition photos");
     expect(privacy).toContain("Cloudflare");
-    for (const path of ["/", "/privacy/"]) {
+    for (const path of ["/support/", "/privacy/"]) {
       const page = await (await open(path)).text();
       expect(page).toContain("Account &amp; family");
       expect(page).not.toContain("Settings → Family access");

@@ -1,48 +1,575 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Help and support for Roomable, the room-rental organiser for landlords.">
-  <meta name="theme-color" content="#f8f3e9">
-  <title>Roomable Support</title>
-  <link rel="canonical" href="https://roomable.deploid.now/">
-  <link rel="icon" href="assets/roomable-icon-120.png" type="image/png">
-  <link rel="apple-touch-icon" href="assets/roomable-icon-180.png">
-  <link rel="stylesheet" href="assets/site.css">
+<meta charset="utf-8">
+<title>Roomable · Keep every room’s rent and shared bills clear</title>
+<meta name="description" content="Roomable helps Australian families manage room rentals, record rent payments and split shared bills, in English and Simplified Chinese.">
+<meta name="theme-color" content="#F5F1E8">
+<link rel="canonical" href="https://roomable.deploid.now/">
+<link rel="icon" href="/assets/roomable-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/assets/marketing/runtime.js"></script>
 </head>
 <body>
-  <main>
-    <header>
-      <a class="brand" href="./"><img class="brand-icon" src="assets/roomable-icon-120.png" alt="">Roomable</a>
-      <h1>Room-rental records, kept simple.</h1>
-      <p class="lead">Help for landlords using Roomable to organise rooms, tenants, rent, utilities, bonds and signed agreements.</p>
-    </header>
+<noscript><p>Roomable helps families keep every room’s rent and shared bills clear. Coming to the App Store for iPhone. <a href="/support/">Get support</a>.</p></noscript>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Roomable · Keep every room’s rent and shared bills clear</title>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet" />
 
-    <section class="card">
-      <h2>Need help?</h2>
-      <p>Email us with what you were trying to do, what happened, and your iPhone model. Please do not email tenancy agreements, passwords or other sensitive tenant information.</p>
-      <a class="button" href="mailto:peter.liang.official@gmail.com?subject=Roomable%20support">Email Roomable support</a>
+
+
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  html, body { height: auto !important; min-height: 100%; }
+  body { margin: 0; background: #F5F1E8; color: #1B1B1F; font-family: 'Albert Sans', -apple-system, 'Helvetica Neue', Arial, 'Noto Sans SC', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  * { box-sizing: border-box; }
+  a { color: #0B7A84; text-decoration: none; }
+  a:hover { color: #095F67; text-decoration: underline; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  :focus-visible { outline: 3px solid #0B7A84; outline-offset: 3px; border-radius: 6px; }
+  h1, h2, h3, p, ul { margin: 0; }
+  img { max-width: 100%; }
+</style>
+</helmet>
+
+<div id="top" style="min-height:100vh;display:flex;flex-direction:column;font-size:17px;line-height:1.55">
+
+  <header style="position:sticky;top:0;z-index:20;background:rgba(245,241,232,0.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(27,27,31,0.08)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(18px,5vw,44px);height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+      <a href="#top" aria-label="Roomable home" style="display:flex;align-items:center;gap:10px;color:#1B1B1F;text-decoration:none;min-height:44px" style-hover="text-decoration:none;color:#1B1B1F">
+        <img src="assets/roomable-icon.png" alt="" width="38" height="38" style="border-radius:10px;display:block" />
+        <span style="font-family:Literata,Georgia,serif;font-size:23px;letter-spacing:-0.01em">Roomable</span>
+      </a>
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <nav aria-label="Main" style="display:flex;align-items:center;gap:4px">
+          <a href="#demo" style="color:#1B1B1F;padding:10px 14px;min-height:44px;display:inline-flex;align-items:center;font-weight:500;border-radius:10px" style-hover="background:rgba(27,27,31,0.06);text-decoration:none;color:#1B1B1F">See it work</a>
+          <a href="#features" style="color:#1B1B1F;padding:10px 14px;min-height:44px;display:inline-flex;align-items:center;font-weight:500;border-radius:10px" style-hover="background:rgba(27,27,31,0.06);text-decoration:none;color:#1B1B1F">What you get</a>
+          <a href="#story" style="color:#1B1B1F;padding:10px 14px;min-height:44px;display:inline-flex;align-items:center;font-weight:500;border-radius:10px" style-hover="background:rgba(27,27,31,0.06);text-decoration:none;color:#1B1B1F">Our story</a>
+          <a href="#faqs" style="color:#1B1B1F;padding:10px 14px;min-height:44px;display:inline-flex;align-items:center;font-weight:500;border-radius:10px" style-hover="background:rgba(27,27,31,0.06);text-decoration:none;color:#1B1B1F">FAQs</a>
+          <a href="#demo" aria-label="See Roomable in action" style="margin-left:12px;display:inline-flex;align-items:center;gap:8px;background:#1B1B1F;color:#FFFFFF;border-radius:12px;padding:0 16px 0 13px;height:46px;text-decoration:none" style-hover="background:#000000;color:#FFFFFF;text-decoration:none">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFFFFF" d="M8 5v14l11-7z"></path></svg>
+            <span style="display:flex;flex-direction:column;line-height:1.05;text-align:left"><span style="font-size:10px;letter-spacing:0.02em">See Roomable</span><span style="font-size:16px;font-weight:600">in action</span></span>
+          </a>
+        </nav>
+      </sc-if>
+      <sc-if value="{{ narrow }}">
+        <button type="button" onClick="{{ toggleMenu }}" aria-expanded="{{ menuOpen }}" aria-controls="mobile-menu" aria-label="Menu" style="width:44px;height:44px;flex:none;border-radius:12px;border:1px solid rgba(27,27,31,0.14);background:#FFFDF9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px">
+          <span style="width:18px;height:2px;background:#1B1B1F;border-radius:1px;display:block"></span>
+          <span style="width:18px;height:2px;background:#1B1B1F;border-radius:1px;display:block"></span>
+          <span style="width:18px;height:2px;background:#1B1B1F;border-radius:1px;display:block"></span>
+        </button>
+      </sc-if>
+    </div>
+    <sc-if value="{{ menuOpen }}">
+      <nav id="mobile-menu" aria-label="Main" style="padding:8px clamp(18px,5vw,44px) 20px;display:flex;flex-direction:column;gap:4px;border-top:1px solid rgba(27,27,31,0.08);background:#F5F1E8">
+        <a href="#demo" onClick="{{ closeMenu }}" style="color:#1B1B1F;padding:12px 6px;min-height:48px;display:flex;align-items:center;font-size:18px;font-weight:500">See it work</a>
+        <a href="#features" onClick="{{ closeMenu }}" style="color:#1B1B1F;padding:12px 6px;min-height:48px;display:flex;align-items:center;font-size:18px;font-weight:500">What you get</a>
+        <a href="#story" onClick="{{ closeMenu }}" style="color:#1B1B1F;padding:12px 6px;min-height:48px;display:flex;align-items:center;font-size:18px;font-weight:500">Our story</a>
+        <a href="#faqs" onClick="{{ closeMenu }}" style="color:#1B1B1F;padding:12px 6px;min-height:48px;display:flex;align-items:center;font-size:18px;font-weight:500">FAQs</a>
+        <a href="#demo" onClick="{{ closeMenu }}" style="color:#0B7A84;padding:12px 6px;min-height:48px;display:flex;align-items:center;font-size:18px;font-weight:600">See Roomable in action</a>
+      </nav>
+    </sc-if>
+  </header>
+
+  <main style="flex:1">
+
+    <section aria-labelledby="hero-title" style="position:relative;overflow:hidden">
+      <div style="max-width:1200px;margin:0 auto;padding:clamp(28px,6vw,88px) clamp(18px,5vw,44px) clamp(40px,7vw,104px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(28px,5vw,64px);align-items:center">
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:22px;max-width:600px;opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">
+          <p style="display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A4F57"><span style="width:28px;height:2px;background:#0A4F57;display:inline-block;flex:none"></span>For families renting out rooms · Coming to iPhone</p>
+          <h1 id="hero-title" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(40px,5.4vw,76px);line-height:1.02;letter-spacing:-0.025em;text-wrap:pretty">Keep every room’s rent and shared bills <em style="font-style:italic;color:#0B7A84">clear.</em></h1>
+          <p style="font-size:clamp(18px,1.4vw,21px);line-height:1.5;color:#5C5750;max-width:520px;text-wrap:pretty">Know what each room owes. Record rent, split shared bills and keep family in sync, in English or 简体中文.</p>
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:22px 28px;margin-top:6px">
+            <a href="#demo" aria-label="See Roomable in action" style="display:inline-flex;align-items:center;gap:11px;background:#1B1B1F;color:#FFFFFF;border-radius:16px;padding:0 24px 0 18px;height:60px;text-decoration:none;box-shadow:0 12px 30px -14px rgba(27,27,31,0.55);transition:transform .2s ease,background .2s ease" style-hover="background:#000000;color:#FFFFFF;text-decoration:none;transform:translateY(-2px)">
+              <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFFFFF" d="M8 5v14l11-7z"></path></svg>
+              <span style="display:flex;flex-direction:column;line-height:1.05;text-align:left"><span style="font-size:12px;letter-spacing:0.02em">See Roomable</span><span style="font-size:22px;font-weight:600;letter-spacing:-0.01em">in action</span></span>
+            </a>
+            
+          </div>
+        </div>
+
+        <div style="position:relative;width:100%;max-width:580px;aspect-ratio:10/11;margin:0 auto;justify-self:end" role="img" aria-label="Two Roomable screens: Today, listing overdue and due rent, and Properties, listing five houses with their occupied rooms">
+          <div data-reveal="1" style="position:absolute;right:-6%;top:0;width:64%;aspect-ratio:1;border-radius:50%;background:#F3DC8A;opacity:0;transform:scale(0.9);transition:opacity .9s ease,transform .9s ease"></div>
+          <div data-reveal="1" style="position:absolute;left:-2%;bottom:6%;width:56%;height:40%;border-radius:36px;background:#D5E0CC;opacity:0;transform:translateY(24px);transition:opacity .9s ease .1s,transform .9s ease .1s"></div>
+          <img data-reveal="1" data-reveal-transform="rotate(-4deg)" src="assets/web/today.png" alt="" width="1320" height="2868" style="position:absolute;left:10%;top:2%;width:46%;height:auto;border-radius:clamp(22px,3.2vw,40px);box-shadow:0 30px 60px -28px rgba(27,27,31,0.5),0 0 0 1px rgba(27,27,31,0.1);opacity:0;transform:translateY(40px) rotate(-6deg);transition:opacity .9s ease .25s,transform .9s cubic-bezier(.2,.7,.2,1) .25s" />
+          <img data-reveal="1" data-reveal-transform="rotate(3deg)" src="assets/web/properties.png" alt="" width="1206" height="2622" style="position:absolute;right:4%;bottom:0;width:42%;height:auto;border-radius:clamp(20px,3vw,36px);box-shadow:0 30px 60px -28px rgba(27,27,31,0.5),0 0 0 1px rgba(27,27,31,0.1);opacity:0;transform:translateY(40px) rotate(5deg);transition:opacity .9s ease .45s,transform .9s cubic-bezier(.2,.7,.2,1) .45s" />
+          <div data-reveal="1" style="position:absolute;left:0;bottom:-2%;display:inline-flex;align-items:center;gap:8px;background:#FFFDF9;border-radius:999px;padding:8px 14px 8px 10px;font-size:14px;color:#5C5750;box-shadow:0 8px 24px -14px rgba(27,27,31,0.4);opacity:0;transition:opacity .9s ease .7s"><span style="width:8px;height:8px;border-radius:4px;background:#3E7A55"></span>Real app screens · example data</div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Signing in</h2>
-      <p>The App Store version uses Sign in with Apple. Family beta builds may also offer Google or an email sign-in link. Signing in creates your own empty workspace. It does not reveal another person’s homes.</p>
+    <section aria-labelledby="mess-title" style="background:#0A4F57;color:#F5F1E8;position:relative;overflow:hidden">
+      <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,120px) clamp(18px,5vw,44px)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(24px,4vw,56px);align-items:end;margin-bottom:clamp(40px,5vw,72px)">
+          <h2 id="mess-title" data-reveal="1" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(34px,4.2vw,58px);line-height:1.05;letter-spacing:-0.02em;text-wrap:pretty;opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">You know the rent came in. <em style="color:#F3DC8A">Proving it</em> is the hard part.</h2>
+          <p data-reveal="1" style="font-size:clamp(17px,1.3vw,20px);color:#CFE0E1;max-width:480px;text-wrap:pretty;opacity:0;transform:translateY(20px);transition:opacity .8s ease .15s,transform .8s ease .15s">When a family shares a few houses, the record of who paid what ends up in three places at once. None of them is per room, and none of them is the same for everyone.</p>
+        </div>
 
-      <h2>Sharing a property</h2>
-      <p>A full owner can open Settings, choose a property, and invite a family member. Each person sees only the properties shared with their account.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:20px">
+          <div data-reveal="1" style="background:#FFFDF9;color:#1B1B1F;border-radius:28px;padding:26px 26px 28px;display:flex;flex-direction:column;gap:18px;opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease">
+            <div style="background:#F4C6A4;border-radius:20px;aspect-ratio:5/3;display:flex;align-items:center;justify-content:center;overflow:hidden">
+              <svg viewBox="0 0 200 120" width="100%" aria-hidden="true" style="max-height:170px">
+                <circle cx="26" cy="30" r="11" fill="#1B1B1F"></circle><circle cx="26" cy="26" r="4" fill="#F4C6A4"></circle><path d="M18 36a8 6 0 0 1 16 0" fill="#F4C6A4"></path>
+                <rect x="44" y="16" width="118" height="30" rx="10" fill="#FFFDF9" stroke="#1B1B1F" stroke-width="2"></rect>
+                <path d="M50 44l-6 10 14-8" fill="#FFFDF9" stroke="#1B1B1F" stroke-width="2" stroke-linejoin="round"></path>
+                <rect x="47" y="19" width="112" height="24" rx="8" fill="#FFFDF9"></rect>
+                <text x="56" y="35" font-family="Albert Sans, sans-serif" font-size="11" font-weight="600" fill="#1B1B1F">Power bill is $120</text>
+                <circle cx="174" cy="90" r="11" fill="#0B7A84"></circle><circle cx="174" cy="86" r="4" fill="#FFFDF9"></circle><path d="M166 96a8 6 0 0 1 16 0" fill="#FFFDF9"></path>
+                <rect x="60" y="64" width="98" height="30" rx="10" fill="#0B7A84"></rect>
+                <path d="M152 92l6 10-14-8z" fill="#0B7A84"></path>
+                <text x="70" y="83" font-family="Albert Sans, sans-serif" font-size="11" font-weight="600" fill="#FFFDF9">Did anyone pay?</text>
+              </svg>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <h3 style="font-family:Literata,Georgia,serif;font-weight:500;font-size:24px;line-height:1.2;letter-spacing:-0.01em">A bill in the group chat</h3>
+              <p style="color:#5C5750;font-size:16px;text-wrap:pretty">Scroll back far enough and the amount is there. Whether anyone paid their share is not.</p>
+            </div>
+          </div>
+          <div data-reveal="1" style="background:#FFFDF9;color:#1B1B1F;border-radius:28px;padding:26px 26px 28px;display:flex;flex-direction:column;gap:18px;margin-top:clamp(0px,3vw,40px);opacity:0;transform:translateY(28px);transition:opacity .8s ease .12s,transform .8s ease .12s">
+            <div style="background:#F3DC8A;border-radius:20px;aspect-ratio:5/3;display:flex;align-items:center;justify-content:center;overflow:hidden">
+              <svg viewBox="0 0 200 120" width="100%" aria-hidden="true" style="max-height:170px">
+                <path d="M36 10h100l28 28v72a4 4 0 0 1-4 4H36a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4z" fill="#FFFDF9" stroke="#1B1B1F" stroke-width="2"></path>
+                <path d="M136 10v28h28" fill="#F3DC8A" stroke="#1B1B1F" stroke-width="2"></path>
+                <rect x="44" y="46" width="112" height="16" fill="#D6E4EB"></rect>
+                <g stroke="#1B1B1F" stroke-width="1.2" opacity="0.55"><path d="M44 46h112 M44 62h112 M44 78h112 M44 94h112 M44 46v64 M84 46v64 M124 46v64 M156 46v64"></path></g>
+                <rect x="84" y="78" width="40" height="16" fill="#F4C6A4"></rect>
+                <g font-family="Albert Sans, sans-serif" font-size="8.5" fill="#1B1B1F"><text x="48" y="57" font-weight="600">Room</text><text x="88" y="57" font-weight="600">Rent</text><text x="128" y="57" font-weight="600">Paid</text><text x="48" y="73">Room 1</text><text x="88" y="73">550</text><text x="128" y="73">?</text><text x="48" y="89">Room 2</text><text x="88" y="89" font-weight="700">#REF!</text><text x="128" y="89">yes?</text><text x="48" y="105">Room 3</text><text x="88" y="105">1200</text><text x="128" y="105">—</text></g>
+              </svg>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <h3 style="font-family:Literata,Georgia,serif;font-weight:500;font-size:24px;line-height:1.2;letter-spacing:-0.01em">A balance in a spreadsheet</h3>
+              <p style="color:#5C5750;font-size:16px;text-wrap:pretty">One person keeps it. One formula is wrong. Everyone else asks them.</p>
+            </div>
+          </div>
+          <div data-reveal="1" style="background:#FFFDF9;color:#1B1B1F;border-radius:28px;padding:26px 26px 28px;display:flex;flex-direction:column;gap:18px;opacity:0;transform:translateY(28px);transition:opacity .8s ease .24s,transform .8s ease .24s">
+            <div style="background:#D6E4EB;border-radius:20px;aspect-ratio:5/3;display:flex;align-items:center;justify-content:center;overflow:hidden">
+              <svg viewBox="0 0 200 120" width="100%" aria-hidden="true" style="max-height:170px">
+                <rect x="20" y="22" width="160" height="76" rx="10" fill="#FFFDF9" stroke="#1B1B1F" stroke-width="2"></rect>
+                <path d="M20 44h160" stroke="#1B1B1F" stroke-width="2"></path>
+                <g fill="none" stroke="#1B1B1F" stroke-width="1.8" stroke-linejoin="round"><path d="M30 38h14 M31 34h12 M37 27l7 4H30z M32 34v4 M37 34v4 M42 34v4"></path></g>
+                <text x="50" y="38" font-family="Albert Sans, sans-serif" font-size="9" font-weight="600" letter-spacing="1" fill="#1B1B1F">TRANSFER IN</text>
+                <text x="30" y="70" font-family="Albert Sans, sans-serif" font-size="17" font-weight="700" fill="#1B1B1F">$400.00</text>
+                <text x="30" y="86" font-family="Albert Sans, sans-serif" font-size="9" fill="#5C5750">Ref: (none)</text>
+                <g fill="none" stroke="#0B7A84" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M126 62h34 M152 54l8 8-8 8"></path></g>
+                <text x="112" y="86" font-family="Literata, Georgia, serif" font-style="italic" font-size="10" fill="#1B1B1F">which room?</text>
+              </svg>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <h3 style="font-family:Literata,Georgia,serif;font-weight:500;font-size:24px;line-height:1.2;letter-spacing:-0.01em">A transfer with no reference</h3>
+              <p style="color:#5C5750;font-size:16px;text-wrap:pretty">The money is in the account. Which room, which week, rent or electricity: that lives in someone’s head.</p>
+            </div>
+          </div>
+        </div>
 
-      <h2>Deleting your account</h2>
-      <p>Open Settings → Account &amp; family → Delete account. Roomable shows what will be removed before asking for final confirmation. Shared homes stay with their other owners; a home with no other owner and its Roomable records will be deleted.</p>
-
-      <h2>Privacy</h2>
-      <p>Read the <a href="privacy/">Roomable Privacy Policy</a> for details about the information the app stores and how account deletion works.</p>
-
-      <h2>Terms</h2>
-      <p>Read the <a href="terms/">Roomable Terms of Use</a>.</p>
+        <div data-reveal="1" style="display:flex;flex-direction:column;align-items:center;margin-top:clamp(28px,4vw,48px);opacity:0;transition:opacity .8s ease">
+          <svg viewBox="0 0 900 150" aria-hidden="true" style="width:min(100%,900px);height:auto;display:block">
+            <g fill="none" stroke="#F3DC8A" stroke-width="2" stroke-linecap="round">
+              <path data-draw="1" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s ease .2s" d="M150 0C150 90 450 60 450 150"></path>
+              <path data-draw="1" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s ease .2s" d="M450 0v150"></path>
+              <path data-draw="1" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s ease .2s" d="M750 0C750 90 450 60 450 150"></path>
+            </g>
+          </svg>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;margin-top:-2px">
+            <img src="assets/roomable-icon.png" alt="" width="72" height="72" style="border-radius:18px;box-shadow:0 16px 40px -18px rgba(0,0,0,0.6)" />
+            <p style="font-family:Literata,Georgia,serif;font-size:clamp(22px,2.4vw,30px);line-height:1.25;max-width:560px;text-wrap:pretty">One record per room, kept by the people who own it.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>Roomable is built for Australian room-rental landlords. Last updated 5 September 2026.</footer>
+    <section id="demo" aria-labelledby="demo-title" style="background:#F5F1E8">
+      <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,120px) clamp(18px,5vw,44px)">
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:14px;max-width:720px;margin-bottom:clamp(32px,4vw,56px);opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">
+          <p style="font-size:15px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A4F57">See it work · real screens</p>
+          <h2 id="demo-title" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(34px,4.2vw,58px);line-height:1.05;letter-spacing:-0.02em;text-wrap:pretty">Part of the rent. <em style="color:#0B7A84">All of the picture.</em></h2>
+          <p style="font-size:clamp(17px,1.3vw,20px);color:#5C5750;text-wrap:pretty">Jordan Lee rents Room 1 at 18 Rivergum Avenue. $550 of rent is overdue and a separate $66 electricity share is open. Then $400 arrives.</p>
+        </div>
+
+        <sc-if value="{{ narrow }}">
+          <div data-reveal="1" style="display:flex;flex-direction:column;gap:14px;opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease">
+            <div style="{{ winStyle }}" aria-live="polite">
+              <div style="position:absolute;left:8%;right:8%;top:22px;bottom:0;overflow:hidden;border-radius:24px 24px 0 0;box-shadow:0 0 0 1px rgba(27,27,31,0.1)">
+                <sc-for list="{{ steps }}" as="s" hint-placeholder-count="1">
+                  <img src="{{ s.src }}" alt="{{ s.alt }}" width="1206" height="2622" style="{{ s.cropStyle }}" aria-hidden="{{ s.hidden }}" />
+                </sc-for>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;min-height:118px">
+              <p style="font-size:13px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A4F57">{{ stepCount }}</p>
+              <p style="font-weight:600;font-size:19px;line-height:1.3">{{ activeTitle }}</p>
+              <p style="color:#5C5750;font-size:16px;line-height:1.5;text-wrap:pretty">{{ activeBody }}</p>
+            </div>
+            <div style="display:flex;gap:10px">
+              <button type="button" onClick="{{ prevStep }}" aria-label="Previous step" style="height:48px;flex:1;border-radius:12px;border:1px solid rgba(27,27,31,0.2);background:#FFFDF9;font-weight:600">Back</button>
+              <button type="button" onClick="{{ nextStep }}" aria-label="Next step" style="height:48px;flex:1;border-radius:12px;border:none;background:#0B7A84;color:#FFFFFF;font-weight:600">{{ nextLabel }}</button>
+            </div>
+            <p style="font-size:14px;color:#5C5750;text-wrap:pretty">Each payment is recorded for a purpose you choose. This one is Rent, so the electricity share stays unchanged until someone records it.</p>
+          </div>
+        </sc-if>
+        <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(28px,4vw,64px);align-items:start">
+          <div data-reveal="1" style="position:relative;display:flex;justify-content:center;opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease">
+            <div style="{{ stageTintStyle }}"></div>
+            <div style="position:relative;width:min(100%,340px);aspect-ratio:1206/2622" aria-live="polite">
+              <sc-for list="{{ steps }}" as="s" hint-placeholder-count="1">
+                <img src="{{ s.src }}" alt="{{ s.alt }}" width="1206" height="2622" style="{{ s.imgStyle }}" aria-hidden="{{ s.hidden }}" />
+              </sc-for>
+            </div>
+          </div>
+
+          <div data-reveal="1" style="display:flex;flex-direction:column;gap:18px;opacity:0;transform:translateY(24px);transition:opacity .8s ease .1s,transform .8s ease .1s">
+            <div style="display:flex;flex-wrap:wrap;gap:8px" aria-label="Figures in this story">
+              <sc-for list="{{ figures }}" as="f" hint-placeholder-count="4">
+                <span style="{{ f.style }}">{{ f.label }}</span>
+              </sc-for>
+            </div>
+            <ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px solid rgba(27,27,31,0.12)" aria-label="Steps">
+              <sc-for list="{{ steps }}" as="s" hint-placeholder-count="6">
+                <li style="border-bottom:1px solid rgba(27,27,31,0.12)">
+                  <button type="button" onClick="{{ s.go }}" aria-current="{{ s.current }}" style="{{ s.btnStyle }}">
+                    <span style="{{ s.numStyle }}">{{ s.n }}</span>
+                    <span style="display:flex;flex-direction:column;gap:4px;min-width:0">
+                      <span style="font-weight:600;font-size:18px;line-height:1.3">{{ s.title }}</span>
+                      <sc-if value="{{ s.active }}"><span style="color:#5C5750;font-size:16px;line-height:1.5;text-wrap:pretty">{{ s.body }}</span></sc-if>
+                    </span>
+                  </button>
+                </li>
+              </sc-for>
+            </ol>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+              <button type="button" onClick="{{ prevStep }}" aria-label="Previous step" style="height:48px;min-width:48px;padding:0 18px;border-radius:12px;border:1px solid rgba(27,27,31,0.2);background:#FFFDF9;font-weight:600" style-hover="background:#FFFFFF;border-color:rgba(27,27,31,0.4)">Back</button>
+              <button type="button" onClick="{{ nextStep }}" aria-label="Next step" style="height:48px;min-width:48px;padding:0 20px;border-radius:12px;border:none;background:#0B7A84;color:#FFFFFF;font-weight:600" style-hover="background:#095F67">{{ nextLabel }}</button>
+              <button type="button" onClick="{{ togglePlay }}" aria-pressed="{{ playing }}" style="height:48px;padding:0 18px;border-radius:12px;border:1px solid rgba(27,27,31,0.2);background:transparent;font-weight:600;color:#1B1B1F" style-hover="background:#FFFDF9">{{ playLabel }}</button>
+              <span style="font-size:14px;color:#5C5750">{{ stepCount }}</span>
+            </div>
+            <p style="font-size:14px;color:#5C5750;text-wrap:pretty">Each payment is recorded for a purpose you choose. This one is Rent, so the electricity share stays unchanged until someone records it.</p>
+          </div>
+        </div>
+        </sc-if>
+      </div>
+    </section>
+
+    <section id="film" aria-labelledby="film-title" style="background:#1B1B1F;color:#F5F1E8">
+      <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,7vw,104px) clamp(18px,5vw,44px);display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)">
+        <div data-reveal="1" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px;align-items:end;opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">
+          <h2 id="film-title" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(30px,3.6vw,48px);line-height:1.08;letter-spacing:-0.02em;text-wrap:pretty">The same story, in 26 seconds.</h2>
+          <p style="color:#CFCBC2;font-size:clamp(16px,1.2vw,18px);max-width:460px;text-wrap:pretty">One overdue room, one partial payment and one shared bill, followed through on the real screens.</p>
+        </div>
+        <div data-reveal="1" style="{{ filmFrameStyle }}">
+          <sc-if value="{{ filmClosed }}" hint-placeholder-val="{{ true }}">
+            <button type="button" onClick="{{ openFilm }}" aria-label="Play the film" style="position:absolute;inset:0;width:100%;height:100%;border:none;background:#F5F1E8;padding:0;overflow:hidden;color:#FFFFFF">
+              <img src="{{ filmPoster }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+              <span style="position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:10px;padding:13px 19px;white-space:nowrap;border-radius:999px;background:#0A4F57;box-shadow:0 8px 24px rgba(27,27,31,.2);font-size:16px;font-weight:600"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFFFFF" d="M7 4.5v15l12-7.5z"></path></svg>Play film · 26 sec</span>
+            </button>
+          </sc-if>
+          <sc-if value="{{ filmOpen }}">
+            <video key="{{ filmSrc }}" ref="{{ videoRef }}" src="{{ filmSrc }}" poster="{{ filmPoster }}" controls="{{ true }}" playsInline="{{ true }}" preload="metadata" aria-label="Roomable product film, 26 seconds, no sound" style="position:absolute;inset:0;width:100%;height:100%;background:#F5F1E8;display:block"></video>
+          </sc-if>
+        </div>
+      </div>
+    </section>
+
+    <div id="features">
+      <section aria-labelledby="f1-title" style="background:#F3DC8A;overflow:hidden">
+        <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,120px) clamp(18px,5vw,44px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,5vw,72px);align-items:center">
+          <div data-reveal="1" style="display:flex;flex-direction:column;gap:18px;max-width:520px;opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">
+            <p style="font-size:15px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A4F57">Room records</p>
+            <h2 id="f1-title" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(32px,3.8vw,52px);line-height:1.06;letter-spacing:-0.02em;text-wrap:pretty">Every room, on one screen you can trust.</h2>
+            <p style="font-size:clamp(17px,1.3vw,19px);color:#3B3730;text-wrap:pretty">Today lists what is overdue, due today and coming up across every property. Each tenant’s page shows how far rent is paid through, the next due date and how long is left on the agreement.</p>
+            <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;font-size:17px">
+              <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:11px;background:#1B1B1F;color:#F3DC8A;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:3px">✓</span>Tap the circle when rent arrives, or record a partial amount.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:11px;background:#1B1B1F;color:#F3DC8A;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:3px">✓</span>Paid-through dates and tenancy end reminders, per room.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:11px;background:#1B1B1F;color:#F3DC8A;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:3px">✓</span>Agreement dates and days remaining on every tenancy.</li>
+            </ul>
+          </div>
+          <div data-reveal="1" style="position:relative;display:flex;justify-content:center;gap:clamp(12px,3vw,28px);align-items:flex-start;opacity:0;transform:translateY(28px);transition:opacity .9s ease .1s,transform .9s ease .1s">
+            <img src="assets/web/tenant.png" alt="Tenant page for Alex Morgan, 12 Banksia Street Room 1: rent paid through 11 Sep 2026, next due 12 Sep 2026, amount due $250.00, fixed term 11 Jul to 20 Oct 2026, 45 days remaining, tenancy notes" width="1206" height="2622" style="width:min(44%,260px);height:auto;border-radius:clamp(20px,3vw,34px);box-shadow:0 30px 60px -26px rgba(27,27,31,0.5),0 0 0 1px rgba(27,27,31,0.1)" />
+            <img src="assets/web/today-coming-up.png" alt="Today, coming up 7: rent due for Morgan Smith 6 Sep, Casey Wilson 7 Sep, Riley Jones 10 Sep, Alex Morgan, Avery Brown and Sam Nguyen 12 Sep 2026, and 21 days until the tenancy ends at 27 Sunset Road, Room 1" width="1206" height="2622" style="width:min(44%,260px);height:auto;border-radius:clamp(20px,3vw,34px);box-shadow:0 30px 60px -26px rgba(27,27,31,0.5),0 0 0 1px rgba(27,27,31,0.1);margin-top:clamp(32px,6vw,80px)" />
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="f2-title" style="background:#D5E0CC;overflow:hidden">
+        <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,120px) clamp(18px,5vw,44px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,5vw,72px);align-items:center">
+          <div data-reveal="1" style="position:relative;display:flex;justify-content:center;gap:clamp(12px,3vw,28px);align-items:flex-start;opacity:0;transform:translateY(28px);transition:opacity .9s ease .1s,transform .9s ease .1s">
+            <img src="assets/web/today-zh.png" alt="Roomable Today screen in Simplified Chinese: 今天, 已逾期 3, 今天到期 2, 即将到期 7" width="1320" height="2868" style="width:min(44%,260px);height:auto;border-radius:clamp(20px,3vw,34px);box-shadow:0 30px 60px -26px rgba(27,27,31,0.5),0 0 0 1px rgba(27,27,31,0.1);margin-top:clamp(32px,6vw,80px)" />
+            <img src="assets/web/today.png" alt="The same Today screen in English: Overdue 3, Due today 2, Coming up 7" width="1320" height="2868" style="width:min(44%,260px);height:auto;border-radius:clamp(20px,3vw,34px);box-shadow:0 30px 60px -26px rgba(27,27,31,0.5),0 0 0 1px rgba(27,27,31,0.1)" />
+          </div>
+          <div data-reveal="1" style="display:flex;flex-direction:column;gap:18px;max-width:520px;opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">
+            <p style="font-size:15px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A4F57">Family collaboration</p>
+            <h2 id="f2-title" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(32px,3.8vw,52px);line-height:1.06;letter-spacing:-0.02em;text-wrap:pretty">The whole family, each in <em style="color:#0A4F57">their own language.</em></h2>
+            <p style="font-size:clamp(17px,1.3vw,19px);color:#3B3730;text-wrap:pretty">Share a property by invite code. Each person opens Roomable in English or 简体中文 and sees the same rooms, the same rent and the same bills.</p>
+            <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;font-size:17px">
+              <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:11px;background:#0A4F57;color:#D5E0CC;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:3px">✓</span>Roles per property: full owner, manager, or view only.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:11px;background:#0A4F57;color:#D5E0CC;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:3px">✓</span>Shared records refresh after a change is saved.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:11px;background:#0A4F57;color:#D5E0CC;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:3px">✓</span>Same figures for everyone; language is a personal setting.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="f3-title" style="background:#D6E4EB;overflow:hidden">
+        <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,120px) clamp(18px,5vw,44px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,5vw,72px);align-items:center">
+          <div data-reveal="1" style="display:flex;flex-direction:column;gap:18px;max-width:520px;opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">
+            <p style="font-size:15px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#0A4F57">Receipts and documents</p>
+            <h2 id="f3-title" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(32px,3.8vw,52px);line-height:1.06;letter-spacing:-0.02em;text-wrap:pretty">A numbered receipt for every dollar you record.</h2>
+            <p style="font-size:clamp(17px,1.3vw,19px);color:#3B3730;text-wrap:pretty">Each recorded payment gets a receipt with the premises, room, method, purpose and date. Corrections keep the original entry. The signed agreement, bond facts and dates live under the tenancy, where you will find them.</p>
+            <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;font-size:17px">
+              <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:11px;background:#0B7A84;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:3px">✓</span>Receipts numbered per property, like RIV-0003.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:11px;background:#0B7A84;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:3px">✓</span>Store the agreement you signed elsewhere. Roomable does not e-sign.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:22px;height:22px;border-radius:11px;background:#0B7A84;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:3px">✓</span>Utility bills keep each tenant’s share until it is recorded.</li>
+            </ul>
+          </div>
+          <div data-reveal="1" style="position:relative;display:flex;justify-content:center;gap:clamp(12px,3vw,28px);align-items:flex-start;opacity:0;transform:translateY(28px);transition:opacity .9s ease .1s,transform .9s ease .1s">
+            <img src="assets/web/receipt.png" alt="Payment receipt RIV-0003: total received $400.00, rent amount $400.00, received from Jordan Lee, 18 Rivergum Avenue Bentley WA 6102, Room 1, bank transfer, purpose rent, 5 September 2026" width="1206" height="2622" style="width:min(44%,260px);height:auto;border-radius:clamp(20px,3vw,34px);box-shadow:0 30px 60px -26px rgba(27,27,31,0.5),0 0 0 1px rgba(27,27,31,0.1);margin-top:clamp(32px,6vw,80px)" />
+            <img src="assets/web/utility-bill.png" alt="Utility bill: electricity at 18 Rivergum Avenue, bill total $120.00, tenant shares Taylor Chen $60.00 open and Jordan Lee $60.00 open" width="1206" height="2622" style="width:min(44%,260px);height:auto;border-radius:clamp(20px,3vw,34px);box-shadow:0 30px 60px -26px rgba(27,27,31,0.5),0 0 0 1px rgba(27,27,31,0.1)" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="how" aria-labelledby="how-title" style="background:#F5F1E8">
+      <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,120px) clamp(18px,5vw,44px)">
+        <h2 id="how-title" data-reveal="1" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(34px,4.2vw,58px);line-height:1.05;letter-spacing:-0.02em;max-width:700px;margin-bottom:clamp(32px,4vw,56px);text-wrap:pretty;opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">Three steps. No bank connection, no setup call.</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px">
+          <div data-reveal="1" style="background:#FFFDF9;border-radius:28px;padding:30px 28px 32px;display:flex;flex-direction:column;gap:14px;border-top:6px solid #F4C6A4;opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease">
+            <span style="font-family:Literata,Georgia,serif;font-size:56px;line-height:1;color:#0A4F57;letter-spacing:-0.03em">01</span>
+            <h3 style="font-size:22px;font-weight:600;letter-spacing:-0.01em">Add your properties and rooms</h3>
+            <p style="color:#5C5750;font-size:16px;text-wrap:pretty">Each house, each room, each tenant and their rent. Existing tenancies start from a date you choose.</p>
+          </div>
+          <div data-reveal="1" style="background:#FFFDF9;border-radius:28px;padding:30px 28px 32px;display:flex;flex-direction:column;gap:14px;border-top:6px solid #F3DC8A;opacity:0;transform:translateY(24px);transition:opacity .8s ease .12s,transform .8s ease .12s">
+            <span style="font-family:Literata,Georgia,serif;font-size:56px;line-height:1;color:#0A4F57;letter-spacing:-0.03em">02</span>
+            <h3 style="font-size:22px;font-weight:600;letter-spacing:-0.01em">Record rent when it arrives</h3>
+            <p style="color:#5C5750;font-size:16px;text-wrap:pretty">Tap the circle for a full period, or record the exact amount received. A receipt is written each time.</p>
+          </div>
+          <div data-reveal="1" style="background:#FFFDF9;border-radius:28px;padding:30px 28px 32px;display:flex;flex-direction:column;gap:14px;border-top:6px solid #D5E0CC;opacity:0;transform:translateY(24px);transition:opacity .8s ease .24s,transform .8s ease .24s">
+            <span style="font-family:Literata,Georgia,serif;font-size:56px;line-height:1;color:#0A4F57;letter-spacing:-0.03em">03</span>
+            <h3 style="font-size:22px;font-weight:600;letter-spacing:-0.01em">Split bills and share with family</h3>
+            <p style="color:#5C5750;font-size:16px;text-wrap:pretty">Enter a bill, choose who pays, split equally or by amount. Invite the family so everyone sees the same thing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" aria-labelledby="story-title" style="background:#1B1B1F;color:#F5F1E8;position:relative;overflow:hidden">
+      <svg aria-hidden="true" viewBox="0 0 600 400" style="position:absolute;right:-6%;top:-10%;width:min(70%,640px);opacity:0.16;pointer-events:none">
+        <g fill="none" stroke="#F5F1E8" stroke-width="1.4" stroke-linecap="round">
+          <path d="M20 30h560v340H20z M20 200h250 M270 30v340 M270 240h310 M430 240v130 M120 200a30 30 0 0 1 30-30 M150 170v30 M340 240a30 30 0 0 1 30-30 M370 210v30 M270 90a30 30 0 0 1-30 30 M270 120h-30 M60 60h60v20H60z M320 60h60v20h-60z"></path>
+        </g>
+      </svg>
+      <div style="max-width:1200px;margin:0 auto;padding:clamp(72px,9vw,136px) clamp(18px,5vw,44px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(32px,5vw,72px);align-items:center;position:relative">
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:22px;max-width:580px;opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">
+          <p style="font-size:15px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#F3DC8A">Our story</p>
+          <h2 id="story-title" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(34px,4.2vw,58px);line-height:1.05;letter-spacing:-0.02em;text-wrap:pretty">It started with our family in Perth.</h2>
+          <p style="font-size:clamp(17px,1.3vw,20px);color:#DCD6CA;text-wrap:pretty">Roomable began with a Perth family managing rental properties together. The records lived across paper, spreadsheets and messages, and not everyone in the family preferred the same language.</p>
+          <p style="font-size:clamp(17px,1.3vw,20px);color:#DCD6CA;text-wrap:pretty">We wanted one calm place where each room’s rent and shared bills were clear to everyone who needed to see them, in English or 简体中文. That is why we built Roomable.</p>
+        </div>
+        <div data-reveal="1" style="display:flex;justify-content:center;opacity:0;transform:translateY(28px);transition:opacity .9s ease .15s,transform .9s ease .15s">
+          <img src="assets/web/properties-zh.png" alt="Roomable Properties screen in Simplified Chinese listing 12 Banksia Street, 18 Rivergum Avenue, 5 Acacia Court, 27 Sunset Road and 9 Karri Lane" width="1206" height="2622" style="width:min(100%,280px);height:auto;border-radius:clamp(22px,3vw,36px);box-shadow:0 40px 80px -30px rgba(0,0,0,0.8),0 0 0 1px rgba(245,241,232,0.12);transform:rotate(2deg)" />
+        </div>
+      </div>
+    </section>
+
+    <section id="faqs" aria-labelledby="faq-title" style="background:#F5F1E8">
+      <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,112px) clamp(18px,5vw,44px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,4vw,64px);align-items:start">
+        <h2 id="faq-title" data-reveal="1" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-0.02em;opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">Questions, answered plainly</h2>
+        <div data-reveal="1" style="display:flex;flex-direction:column;border-top:1px solid rgba(27,27,31,0.14);min-width:0;opacity:0;transform:translateY(20px);transition:opacity .8s ease .1s,transform .8s ease .1s">
+          <sc-for list="{{ faqs }}" as="faq" hint-placeholder-count="8">
+            <div style="border-bottom:1px solid rgba(27,27,31,0.14)">
+              <button type="button" onClick="{{ faq.toggle }}" aria-expanded="{{ faq.open }}" style="width:100%;min-height:60px;padding:18px 0;background:none;border:none;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:18px;font-weight:600;color:#1B1B1F">
+                <span>{{ faq.q }}</span>
+                <span aria-hidden="true" style="{{ faq.glyphStyle }}">+</span>
+              </button>
+              <sc-if value="{{ faq.open }}">
+                <div style="padding:0 44px 20px 0;color:#5C5750;font-size:17px;text-wrap:pretty">{{ faq.a }}</div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" aria-labelledby="cta-title" style="background:#0A4F57;color:#F5F1E8;position:relative;overflow:hidden">
+      <div aria-hidden="true" style="position:absolute;left:-10%;bottom:-40%;width:46%;aspect-ratio:1;border-radius:50%;background:#0B7A84;opacity:0.55"></div>
+      <div aria-hidden="true" style="position:absolute;right:-4%;top:-30%;width:30%;aspect-ratio:1;border-radius:50%;background:#F3DC8A;opacity:0.9"></div>
+      <div style="max-width:1200px;margin:0 auto;padding:clamp(72px,9vw,136px) clamp(18px,5vw,44px);position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,5vw,72px);align-items:center">
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:26px;max-width:620px;opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease">
+          <img src="assets/roomable-icon.png" alt="" width="84" height="84" style="border-radius:20px;box-shadow:0 20px 50px -20px rgba(0,0,0,0.7)" />
+          <h2 id="cta-title" style="font-family:Literata,Georgia,serif;font-weight:400;font-size:clamp(36px,4.6vw,64px);line-height:1.02;letter-spacing:-0.025em;text-wrap:pretty">Keep every room’s rent and shared bills <em style="color:#F3DC8A">clear.</em></h2>
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:22px 28px">
+            <a href="#demo" aria-label="See Roomable in action" style="display:inline-flex;align-items:center;gap:11px;background:#1B1B1F;color:#FFFFFF;border-radius:16px;padding:0 24px 0 18px;height:60px;text-decoration:none;box-shadow:0 16px 40px -16px rgba(0,0,0,0.7);transition:transform .2s ease,background .2s ease" style-hover="background:#000000;color:#FFFFFF;text-decoration:none;transform:translateY(-2px)">
+              <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFFFFF" d="M8 5v14l11-7z"></path></svg>
+              <span style="display:flex;flex-direction:column;line-height:1.05;text-align:left"><span style="font-size:12px;letter-spacing:0.02em">See Roomable</span><span style="font-size:22px;font-weight:600;letter-spacing:-0.01em">in action</span></span>
+            </a>
+            
+          </div>
+          <p style="font-size:15px;color:#CFE0E1">Coming to the App Store for iPhone. English and 简体中文.</p>
+        </div>
+        <div data-reveal="1" style="display:flex;justify-content:center;opacity:0;transform:translateY(28px);transition:opacity .9s ease .15s,transform .9s ease .15s">
+          <img src="assets/web/today-remaining.png" alt="Today after the payment: Rent, Jordan Lee, $150.00 overdue; Electricity, Taylor Chen, $66.00 overdue; Electricity, Jordan Lee, $66.00 overdue" width="1320" height="2868" style="width:min(100%,300px);height:auto;border-radius:clamp(22px,3vw,36px);box-shadow:0 40px 80px -30px rgba(0,0,0,0.8),0 0 0 1px rgba(245,241,232,0.15);transform:rotate(-3deg)" />
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer style="background:#F5F1E8;border-top:1px solid rgba(27,27,31,0.08)">
+    <div style="max-width:1200px;margin:0 auto;padding:40px clamp(18px,5vw,44px) 48px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;font-size:15px;color:#5C5750">
+      <div style="display:flex;flex-direction:column;gap:12px;max-width:440px">
+        <div style="display:flex;align-items:center;gap:10px;color:#1B1B1F"><img src="assets/roomable-icon.png" alt="" width="30" height="30" style="border-radius:8px" /><span style="font-family:Literata,Georgia,serif;font-size:20px">Roomable</span></div>
+        <p style="text-wrap:pretty">An iPhone app for Australian owners and families who rent out rooms. You record payments yourself; Roomable does not connect to banks or collect rent.</p>
+        <p style="text-wrap:pretty">Screens show example data. Names, addresses and amounts are fictional. Amounts in AUD.</p>
+      </div>
+      <nav aria-label="Support and legal" style="display:flex;flex-direction:column;gap:6px">
+        <a href="/support/" target="_blank" rel="noopener" style="min-height:44px;display:inline-flex;align-items:center">Support</a>
+        <a href="mailto:peter.liang.official@gmail.com?subject=Roomable%20support" style="min-height:44px;display:inline-flex;align-items:center">Email support</a>
+        <a href="/privacy/" target="_blank" rel="noopener" style="min-height:44px;display:inline-flex;align-items:center">Privacy policy</a>
+        <a href="/terms/" target="_blank" rel="noopener" style="min-height:44px;display:inline-flex;align-items:center">Terms</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showLaurel&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Launch&quot;}}">
+class Component extends DCLogic {
+  state = { wide: true, menuOpen: false, step: 0, playing: false, openFaq: -1, filmOpen: false, reduced: false };
+
+  componentDidMount() {
+    this.mq = window.matchMedia('(min-width: 900px)');
+    const root = document.getElementById('top');
+    this.onMq = () => { const w = root ? root.getBoundingClientRect().width : window.innerWidth; this.setState({ wide: w >= 900, rootW: w }); };
+    this.onMq();
+    this.mq.addEventListener('change', this.onMq);
+    if ('ResizeObserver' in window && root) { this.ro = new ResizeObserver(this.onMq); this.ro.observe(root); }
+    this.rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+    this.onRm = () => this.setState({ reduced: this.rm.matches });
+    this.onRm();
+    this.rm.addEventListener('change', this.onRm);
+    if ('IntersectionObserver' in window) {
+      this.io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { this.reveal(e.target); this.io.unobserve(e.target); } });
+      }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
+    }
+    this.observeReveals();
+  }
+  videoRef = React.createRef();
+  componentDidUpdate() {
+    this.observeReveals();
+    // First open: start playback from the user's tap. Orientation change: the <video> remounts (key) paused, so both never play at once.
+    if (this.playRequested && this.videoRef.current) { this.playRequested = false; this.videoRef.current.play().catch(() => {}); }
+  }
+  componentWillUnmount() {
+    this.mq.removeEventListener('change', this.onMq);
+    this.rm.removeEventListener('change', this.onRm);
+    if (this.io) this.io.disconnect();
+    if (this.ro) this.ro.disconnect();
+    this.stopTimer();
+  }
+  reveal(el) {
+    el.style.opacity = '1';
+    el.style.transform = el.getAttribute('data-reveal-transform') || 'none';
+    el.querySelectorAll('[data-draw]').forEach((p) => { p.style.strokeDashoffset = '0'; });
+  }
+  observeReveals() {
+    document.querySelectorAll('[data-reveal]:not([data-observed])').forEach((el) => {
+      el.setAttribute('data-observed', '1');
+      if (this.rm.matches || !this.io) {
+        el.style.transition = 'none';
+        el.querySelectorAll('[data-draw]').forEach((p) => { p.style.transition = 'none'; });
+        this.reveal(el);
+      } else this.io.observe(el);
+    });
+  }
+  setStep(n, auto) {
+    const step = ((n % 6) + 6) % 6;
+    if (auto) this.setState({ step });
+    else { this.stopTimer(); this.setState({ step, playing: false }); }
+  }
+  stopTimer() { clearInterval(this.timer); this.timer = null; }
+  startTimer() {
+    this.stopTimer();
+    this.timer = setInterval(() => {
+      if (this.state.step >= 5) { this.stopTimer(); this.setState({ playing: false }); return; }
+      this.setStep(this.state.step + 1, true);
+    }, 4200);
+  }
+
+  renderVals() {
+    const s = this.state;
+    const reduced = s.reduced;
+    const showLaurel = this.props.showLaurel ?? true;
+    const base = 'assets/web/';
+    // narrow close-up window is 418px tall; image width ≈ 84% of root; image aspect 2.17 → largest shift (in % of image height) that still fills the window
+    const rootW = s.rootW || 390;
+    const pad = Math.min(44, Math.max(18, rootW * 0.05));
+    const imgH = (rootW - 2 * pad) * 0.84 * 2.17;
+    const cropMax = Math.max(0, Math.floor((1 - 418 / imgH) * 100) - 1);
+    const STEPS = [
+      { src: 'today.png', crop: 22, title: 'Before: $550 rent overdue', body: 'Today shows Jordan Lee’s $550 rent overdue at 18 Rivergum Avenue, Room 1. A separate $66 electricity share is open as well.', alt: 'Today screen: Rent, Jordan Lee, $550.00 overdue; Electricity, Jordan Lee, $66.00 overdue; Electricity, Taylor Chen, $66.00 overdue', tint: '#F4C6A4' },
+      { src: 'record-payment.png', crop: 24, title: 'Record the $400 that arrived', body: 'Open Record payment for Room 1 · Jordan Lee. Type $400, choose Bank transfer and Rent. Before you tap Record, the form shows where the money goes: Rent, $400.00.', alt: 'Record payment form: Room 1 Jordan Lee, $400 typed, Use amount due $550.00 offered, method bank transfer, use this payment for Rent, date received 5 Sep 2026, where this money goes: Rent $400.00 for 2 to 15 Sep 2026', tint: '#F3DC8A' },
+      { src: 'receipt.png', crop: 18, title: 'Receipt RIV-0003: $400', body: 'The receipt records $400 received for rent from Jordan Lee, by bank transfer, on 5 September 2026, with the premises and room.', alt: 'Payment receipt RIV-0003: total received $400.00, rent amount $400.00, received from Jordan Lee, Room 1, bank transfer, 5 September 2026', tint: '#D5E0CC' },
+      { src: 'today-remaining.png', crop: 22, title: '$150 rent still overdue', body: 'Today now shows $150 of rent overdue. This payment was recorded for Rent, so the $66 electricity share stays unchanged.', alt: 'Today screen after payment: Rent, Jordan Lee, $150.00 overdue; Electricity shares of $66.00 for Taylor Chen and Jordan Lee unchanged', tint: '#D6E4EB' },
+      { src: 'bill-split.png', crop: 16, title: 'Split a new $120 bill', body: 'A new $120 electricity bill for 18 Rivergum Avenue. Jordan and Taylor both pay, split equally: $60 each, fully allocated.', alt: 'Add bill form: category Electricity, $120, who pays Jordan Lee Room 1 and Taylor Chen Room 2, split equally $60.00 each, allocated $120.00, bill total $120.00, fully allocated', tint: '#F3DC8A' },
+      { src: 'utility-bill.png', crop: 30, title: 'Saved, and still there tomorrow', body: 'The bill lives under Utilities with each tenant’s $60 share open until it is recorded. Cancelling a wrong bill keeps the original in history.', alt: 'Utility bill detail: Electricity, 18 Rivergum Avenue, bill total $120.00, tenant shares Taylor Chen $60.00 open and Jordan Lee $60.00 open', tint: '#D5E0CC' },
+    ];
+    const stepCrop = Math.min(STEPS[s.step].crop, cropMax);
+    const winH = Math.min(440, Math.round(22 + imgH * (1 - stepCrop / 100)));
+    const steps = STEPS.map((st, i) => {
+      const active = i === s.step;
+      return {
+        n: '0' + (i + 1), title: st.title, body: st.body, alt: st.alt, src: base + st.src, active, hidden: !active, current: active ? 'step' : undefined,
+        // narrow close-up: full width of the real image, shifted so the pertinent rows sit in a 418px window
+        cropStyle: { position: 'absolute', left: 0, top: 0, width: '100%', height: 'auto', transform: 'translateY(' + (-Math.min(st.crop, cropMax)) + '%)', display: active ? 'block' : 'none', opacity: active ? 1 : 0, transition: reduced ? 'none' : 'opacity .55s ease, transform .55s ease', pointerEvents: 'none' },
+        imgStyle: { position: 'absolute', inset: 0, width: '100%', height: '100%', borderRadius: 'clamp(24px,3.4vw,40px)', boxShadow: '0 30px 60px -26px rgba(27,27,31,0.5), 0 0 0 1px rgba(27,27,31,0.1)', opacity: active ? 1 : 0, transform: active ? 'none' : 'scale(0.97)', transition: reduced ? 'none' : 'opacity .55s ease, transform .55s ease', pointerEvents: 'none' },
+        btnStyle: { width: '100%', padding: '14px 0', background: 'none', border: 'none', textAlign: 'left', display: 'flex', gap: '16px', alignItems: 'flex-start', color: '#1B1B1F', minHeight: '56px', opacity: active ? 1 : 0.72 },
+        numStyle: { flex: 'none', width: '36px', height: '36px', borderRadius: '18px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', fontWeight: 700, background: active ? '#0B7A84' : '#FFFDF9', color: active ? '#FFFFFF' : '#5C5750', border: active ? 'none' : '1px solid rgba(27,27,31,0.18)', transition: 'background .3s ease' },
+        go: () => this.setStep(i),
+      };
+    });
+    const FIG = [
+      { label: '$550 overdue', on: [0, 1] }, { label: '$400 recorded · RIV-0003', on: [1, 2] }, { label: '$150 rent left', on: [3] }, { label: '$66 electricity unchanged', on: [0, 3] }, { label: '$120 → $60 + $60', on: [4, 5] },
+    ];
+    const figures = FIG.map((f) => {
+      const on = f.on.includes(s.step);
+      return { label: f.label, style: { display: 'inline-flex', alignItems: 'center', height: '34px', padding: '0 12px', borderRadius: '17px', fontSize: '14px', fontWeight: 600, fontVariantNumeric: 'tabular-nums', background: on ? '#1B1B1F' : '#FFFDF9', color: on ? '#F5F1E8' : '#5C5750', border: on ? '1px solid #1B1B1F' : '1px solid rgba(27,27,31,0.14)', transition: 'background .3s ease, color .3s ease' } };
+    });
+    const FAQ = [
+      ['Who is Roomable for?', 'Owners and families in Australia who rent out individual rooms, typically 5–20 rooms across one to five properties, and who currently track things across spreadsheets, messages and bank statements.'],
+      ['Does Roomable collect rent or connect to my bank?', 'No. You receive rent as usual, then record the payment yourself in Roomable, choosing what it is for. Roomable does not connect to your bank, collect rent or check whether a transfer arrived.'],
+      ['How does sharing with family work?', 'A full owner shares chosen properties by invite code. Each person is a full owner, a manager or view only. Shared records refresh after a change is saved.'],
+      ['Can we use it in Chinese?', 'Yes. The app is available in English and 简体中文, and each person picks their own language. Reminder drafts to tenants are written in English for you to review and send.'],
+      ['We already have tenants. Can we start now?', 'Yes. Existing tenancies start tracking from a date you choose. Older records stay in your spreadsheets or paper; they do not import automatically.'],
+      ['Are agreements signed in Roomable?', 'No. Agreements are signed elsewhere. You can then store the signed file privately under the tenancy, with optional bond facts and dates.'],
+      ['What happens offline?', 'Your saved records stay readable in view-only mode. Changes need a connection, and shared records refresh after a change is saved.'],
+      ['Which devices does it run on?', 'Roomable is an iPhone app, available on the App Store. There is no Android or web version.'],
+    ];
+    const faqs = FAQ.map(([q, a], i) => {
+      const open = s.openFaq === i;
+      return { q, a, open, toggle: () => this.setState({ openFaq: open ? -1 : i }), glyphStyle: { width: '30px', height: '30px', borderRadius: '15px', border: '1.5px solid rgba(27,27,31,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: '20px', lineHeight: 1, color: '#0B7A84', transform: open ? 'rotate(45deg)' : 'none', transition: reduced ? 'none' : 'transform .25s ease' } };
+    });
+    const tint = STEPS[s.step].tint;
+    return {
+      wide: s.wide, narrow: !s.wide, menuOpen: s.menuOpen,
+      toggleMenu: () => this.setState({ menuOpen: !s.menuOpen }), closeMenu: () => this.setState({ menuOpen: false }),
+      showLaurel,
+      tint, winStyle: { position: 'relative', width: '100%', height: winH + 'px', borderRadius: '24px', overflow: 'hidden', background: tint, transition: reduced ? 'none' : 'background .5s ease' }, activeTitle: STEPS[s.step].title, activeBody: STEPS[s.step].body,
+      steps, figures, stageTintStyle: { position: 'absolute', inset: '8% -4% 8% -4%', borderRadius: '40px', background: tint, transition: reduced ? 'none' : 'background .6s ease' },
+      prevStep: () => this.setStep(s.step - 1), nextStep: () => this.setStep(s.step + 1),
+      nextLabel: s.step === 5 ? 'Start over' : 'Next',
+      playing: s.playing, playLabel: s.playing ? 'Pause' : 'Play through',
+      togglePlay: () => { if (s.playing) { this.stopTimer(); this.setState({ playing: false }); } else { const from = s.step === 5 ? 0 : s.step; this.setState({ playing: true, step: from }); this.startTimer(); } },
+      stepCount: 'Step ' + (s.step + 1) + ' of 6',
+      faqs,
+      filmOpen: s.filmOpen, filmClosed: !s.filmOpen, openFilm: () => { this.playRequested = true; this.setState({ filmOpen: true }); },
+      filmSrc: 'assets/film/roomable-preview-' + (s.wide ? 'landscape' : 'portrait') + '.mp4',
+      filmPoster: 'assets/film/roomable-preview-' + (s.wide ? 'landscape' : 'portrait') + '-poster.jpg',
+      videoRef: this.videoRef,
+      filmFrameStyle: { position: 'relative', width: '100%', borderRadius: '28px', overflow: 'hidden', background: '#F5F1E8', aspectRatio: s.wide ? '16 / 9' : '9 / 16', maxHeight: s.wide ? 'none' : '80vh', maxWidth: s.wide ? '100%' : '45vh', margin: '0 auto', opacity: 0, transform: 'translateY(24px)', transition: 'opacity .8s ease .1s, transform .8s ease .1s' },
+    };
+  }
+}
+</script>
 </body>
 </html>

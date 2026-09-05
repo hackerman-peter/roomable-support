@@ -96,3 +96,35 @@ domains only after the custom hostname is live and each URL returns HTTP 200.
    public checks pass.
 6. Keep Google OAuth in Testing until its branding page is complete and a
    physical-device Google sign-in and account-deletion pass has succeeded.
+
+
+### Marketing deployment — 6 September 2026
+
+Deployed version `9648dae1-e00f-47fa-9966-e62202d2b85f` to the existing
+`roomable-support-web` Worker and `roomable.deploid.now` hostname. Previous
+production version for rollback: `a3418901-9597-4cee-bc94-0e89e326bcb2`.
+The condition-report Worker code, bindings, routing and private-response headers
+were not changed. Home is now the reviewed Claude marketing design; the original
+help page is preserved at `/support/`. Privacy and terms remain at their URLs.
+
+This is an accurate pre-release public variant. Apple’s Australian page returned
+404 and its lookup returned zero results at deployment. The primary CTA therefore
+opens the real-screen demo; the page says coming to the App Store. Fictional draft
+testimonials and the unverified five-star laurel remain only in the private design.
+Public films run for 26 seconds, ending before the launch-day download end card.
+To enable downloads later, verify the public listing first. Replace draft quotes
+with permissioned feedback and substantiate the rating before displaying them.
+
+All eleven native web screenshots are included. React 18.3.1 and ReactDOM are
+self-hosted after SHA-384 integrity verification against the Claude runtime pins.
+The unchanged Claude runtime requires `unsafe-eval` to interpret its template
+logic. Public static CSP permits that, same-origin scripts, inline styles and
+Google Fonts; private condition pages retain their independent restrictive CSP.
+Asset caching now revalidates after one hour because filenames are not hashed.
+
+Validation: type generation, TypeScript, 28 Worker-runtime tests and deploy dry
+run passed. Local desktop/mobile navigation, demo, FAQ and both films passed.
+Live HTTPS checks returned 200 for home/support/privacy/terms and media, with
+runtime/image/video bytes matching local files. Missing condition links retain
+404/no-store/no-referrer and junk routes retain 404. Results are recorded in
+`.build/live-marketing-check-20260906.json`. No private report token was used.

@@ -2,7 +2,9 @@
 
 Roomable helps Australian room-rental landlords organise rooms, tenants, rent, utilities, bonds and signed agreements.
 
-Public support site: [roomable.deploid.now](https://roomable.deploid.now/)
+Marketing website: [roomable.deploid.now](https://roomable.deploid.now/)
+
+Support: [roomable.deploid.now/support/](https://roomable.deploid.now/support/)
 
 ## Get help
 
