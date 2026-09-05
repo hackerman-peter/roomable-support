@@ -24,7 +24,7 @@ permissions and MIME-sniffing protection.
 - Home and support: `https://roomable.deploid.now/`
 - Privacy policy: `https://roomable.deploid.now/privacy/`
 - Terms of use: `https://roomable.deploid.now/terms/`
-- Condition photos (prepared locally; not yet deployed):
+- Condition photos (deployed; valid-photo acceptance still pending):
   `https://roomable.deploid.now/condition/?token=<private-report-token>`
 
 ## Private report hosting — local checkpoint, 5 September
@@ -61,6 +61,23 @@ Before deploying, verify the reviewed Roomable condition migrations and endpoint
 are live in the exact project, then deploy this isolated Worker and test real
 HTTPS links, every photo, expiry/revocation and unchanged public support pages.
 The separate static Pages fallback does **not** implement private report links.
+
+### Production checkpoint — 5 September, 14:13
+
+The condition schema and endpoint are now live in the confirmed Supabase project.
+This Worker was deployed as version `9f930dce-c8bb-4e9d-9e45-d879149ff6ec`, then
+updated to `a3418901-9597-4cee-bc94-0e89e326bcb2` with current Account & family
+navigation and an explicit privacy disclosure for optional room records/photos,
+Cloudflare delivery and read-only bearer links. The disclosure explains 30-day
+expiry, revocation, the five-minute signed-image window and downloaded copies.
+
+`npm run verify` passed generated types, typechecking, 26 Worker-runtime tests
+and a deployment dry run. Real HTTPS checks confirm home/privacy/terms HTTP 200,
+the updated disclosure, the logo HTTP 200, and missing/unknown report links HTTP
+404 with no-store/no-referrer headers. No site assets other than the support and
+privacy copy changed. These are negative-path checks: a real valid photo set,
+expiry/revocation and actual Storage cleanup remain acceptance gates in the iOS
+task. No claim of full end-to-end completion is made.
 
 The same origin is suitable for the Google OAuth branding homepage, privacy and
 terms fields. Add the parent domain `deploid.now` to Google OAuth's authorised

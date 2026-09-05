@@ -87,4 +87,18 @@ describe("Roomable private report hosting", () => {
   it("keeps unknown non-report paths as 404", async () => {
     expect((await open("/not-a-real-page/" )).status).toBe(404);
   });
+
+  it("discloses optional photos and bearer-link access without obsolete navigation", async () => {
+    const privacy = await (await open("/privacy/")).text();
+    expect(privacy).toContain("Anyone with that link");
+    expect(privacy).toContain("30 days");
+    expect(privacy).toContain("five more minutes");
+    expect(privacy).toContain("condition photos");
+    expect(privacy).toContain("Cloudflare");
+    for (const path of ["/", "/privacy/"]) {
+      const page = await (await open(path)).text();
+      expect(page).toContain("Account &amp; family");
+      expect(page).not.toContain("Settings → Family access");
+    }
+  });
 });
