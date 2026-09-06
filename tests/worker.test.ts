@@ -84,13 +84,15 @@ describe("Roomable private report hosting", () => {
     expect(await response.text()).toContain("Roomable");
   });
 
-  it("labels the full launch preview and its fictional endorsements explicitly", async () => {
+  it("keeps the central launch notice without repeated placeholder captions", async () => {
     const html = await (await open("/")).text();
     expect(html).toContain("Keep every room’s rent and shared bills");
     expect(html).toContain("Launch design preview.");
     expect(html).toContain("not yet available on the App Store");
-    expect(html).toContain("Sample testimonials · fictional draft copy");
-    expect(html).toContain("Placeholder · rating unverified");
+    expect(html).toContain("Testimonials and the five-star badge below are fictional design placeholders, not customer reviews or a verified rating.");
+    expect(html).toContain("In their words");
+    expect(html).not.toContain("fictional example");
+    expect(html).not.toContain("Placeholder · rating unverified");
     expect(html).toContain('href="/support/"');
     expect(html.match(/<blockquote/g)).toHaveLength(3);
     expect(html).toContain("app-store-5-stars.png");

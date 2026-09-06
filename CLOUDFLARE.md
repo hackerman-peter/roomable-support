@@ -145,3 +145,15 @@ portrait film playback and demo interaction passed. Live home/support/legal and
 restored media returned 200; media hashes match the checked files, and the missing
 condition link still returns 404. No private report code or routes were changed.
 Rollback target: `9648dae1-e00f-47fa-9966-e62202d2b85f`.
+
+
+### Consolidated preview notice — 6 September 2026, 12:03
+
+Version `f6778b65-2d3d-4584-8651-41cb354496f6` retains the exact prominent
+launch-preview banner and removes repeated placeholder captions elsewhere, as
+requested. Testimonials again use “In their words” and role-only attributions;
+the rating artwork has its original layout. Testimonials, badge images and App
+Store links reference the banner with `aria-describedby`. The footer still
+identifies screenshot data as examples. All 28 tests, typecheck and dry run passed.
+The live browser confirms the exact banner, all three quotes, no repeated labels,
+all images loaded and no horizontal overflow. No media or backend routes changed.
