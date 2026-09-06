@@ -128,3 +128,20 @@ Live HTTPS checks returned 200 for home/support/privacy/terms and media, with
 runtime/image/video bytes matching local files. Missing condition links retain
 404/no-store/no-referrer and junk routes retain 404. Results are recorded in
 `.build/live-marketing-check-20260906.json`. No private report token was used.
+
+
+### Full design restored — 6 September 2026, 10:53
+
+At the user's request, restored the full private design as a public launch
+preview. Version `502e8a6d-9ec5-4e91-aa5b-22850b425278` supersedes the
+pre-release variant. App Store button styling and links, both original 30-second
+films, the supplied laurel and all three draft quote layouts are present. A
+visible launch-preview notice explains unavailable downloads, fictional quotes
+and the unverified rating. Local captions identify every draft quote and laurel;
+`noindex` marks the preview. The private Claude design remains unchanged.
+
+All 28 tests and deployment dry run passed. Desktop/mobile rendering, complete
+portrait film playback and demo interaction passed. Live home/support/legal and
+restored media returned 200; media hashes match the checked files, and the missing
+condition link still returns 404. No private report code or routes were changed.
+Rollback target: `9648dae1-e00f-47fa-9966-e62202d2b85f`.

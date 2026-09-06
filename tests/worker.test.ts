@@ -84,15 +84,18 @@ describe("Roomable private report hosting", () => {
     expect(await response.text()).toContain("Roomable");
   });
 
-  it("serves the pre-release marketing page without fictional endorsements or dead download claims", async () => {
+  it("labels the full launch preview and its fictional endorsements explicitly", async () => {
     const html = await (await open("/")).text();
     expect(html).toContain("Keep every room’s rent and shared bills");
-    expect(html).toContain("Coming to the App Store");
+    expect(html).toContain("Launch design preview.");
+    expect(html).toContain("not yet available on the App Store");
+    expect(html).toContain("Sample testimonials · fictional draft copy");
+    expect(html).toContain("Placeholder · rating unverified");
     expect(html).toContain('href="/support/"');
-    expect(html).not.toContain("<blockquote");
-    expect(html).not.toContain("app-store-5-stars.png");
-    expect(html).not.toContain("apps.apple.com/app/");
-    for (const path of ["/assets/marketing/runtime.js", "/assets/marketing/react.js", "/assets/marketing/react-dom.js", "/assets/web/today.png", "/assets/film/roomable-preview-landscape.mp4", "/assets/film/roomable-preview-portrait.mp4"]) {
+    expect(html.match(/<blockquote/g)).toHaveLength(3);
+    expect(html).toContain("app-store-5-stars.png");
+    expect(html).toContain("apps.apple.com/app/id6804918720");
+    for (const path of ["/assets/marketing/runtime.js", "/assets/marketing/react.js", "/assets/marketing/react-dom.js", "/assets/web/today.png", "/assets/film/roomable-launch-landscape.mp4", "/assets/film/roomable-launch-portrait.mp4"]) {
       expect((await open(path)).status).toBe(200);
     }
   });
