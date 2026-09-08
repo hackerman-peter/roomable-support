@@ -1,6 +1,6 @@
 # Roomable Privacy Policy
 
-Effective 4 September 2026.
+Effective 8 September 2026. The published HTML policy at `/privacy/` is the complete policy, including optional photos and sharing links.
 
 Roomable stores the rental records you choose to add so you and the people you authorise can manage shared properties.
 
@@ -10,11 +10,17 @@ Roomable may store your account name, email address and user identifier; propert
 
 ## How the information is used
 
-The information is used only to provide Roomable’s features: signing in, syncing rental records, sharing selected properties, tracking amounts due, preparing records and exports, and showing documents you uploaded. Roomable does not sell personal information, display advertising, or use app data for cross-app tracking.
+The information is used to provide Roomable’s features: signing in, syncing rental records, sharing selected properties, tracking amounts due, preparing records and exports, and showing documents you uploaded. With your permission, basic usage information also helps improve the app. Roomable does not sell personal information, display advertising, or use app data for cross-app tracking.
+
+## Optional usage sharing
+
+If you allow usage sharing during onboarding or in Settings, Roomable records app visits, features used and generic save failures to help improve the app. These records include your account identifier, app build and event times, and are stored in Supabase for up to 90 days. They do not include tenant details, property addresses, financial amounts, documents, photos or message contents. No advertising tracking or screen recording is used.
+
+Sharing is off until you agree. Not now or closing the question keeps it off. Settings → Usage sharing lets you change this choice for your account on each device, not other devices. Turning it off stops future sharing and clears unsent events; previously received events expire within the retention period. Deleting your account removes its analytics records.
 
 ## Service providers
 
-Roomable uses Supabase for authentication, database storage and private document storage. If you choose Google or Apple sign-in, that provider processes the sign-in according to its own privacy policy. Roomable receives only the account information required to authenticate you. Roomable does not run advertising or behavioural product analytics; Google's sign-in software may process limited identifiers, usage and diagnostic information for authentication-service analytics, as declared in its Apple privacy manifest.
+Roomable uses Supabase for authentication, database storage, private document storage and optional usage sharing. If you choose Google or Apple sign-in, that provider processes the sign-in according to its own privacy policy. Roomable receives only the account information required to authenticate you. Google's sign-in software may process limited identifiers, usage and diagnostic information for authentication-service analytics, as declared in its Apple privacy manifest.
 
 ## Sharing and access
 
