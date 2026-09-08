@@ -106,6 +106,17 @@ describe("Roomable private report hosting", () => {
     expect((await open("/not-a-real-page/" )).status).toBe(404);
   });
 
+  it("discloses whole-document AI import and the manual alternative", async () => {
+    const page = await (await open("/privacy/")).text();
+    expect(page).toContain("Anthropic’s API");
+    expect(page).toContain("The whole PDF is processed");
+    expect(page).toContain("Manual entry remains available");
+    expect(page).toContain("does not promise immediate deletion or zero retention");
+    expect(page).toContain("unfinished form draft on your device");
+    expect(page).toContain("legal requirements and usage-policy enforcement");
+    expect(page).toContain('href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data"');
+  });
+
   it("discloses optional photos and bearer-link access without obsolete navigation", async () => {
     const privacy = await (await open("/privacy/")).text();
     expect(privacy).toContain("Anyone with that link");

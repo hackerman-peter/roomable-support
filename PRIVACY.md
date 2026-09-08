@@ -20,6 +20,24 @@ Sharing is off until you agree. Not now or closing the question keeps it off. Se
 
 ## Service providers
 
+Optional agreement import sends the whole selected PDF through Supabase to
+Anthropic's API, only after the in-app disclosure and the owner's affirmative
+selection. This may include personal information beyond the requested fields.
+Only upload documents you are authorised to share. Suggestions require review;
+manual entry is available without AI processing.
+
+The import endpoint does not intentionally persist the PDF or extracted contents
+in Roomable's database or application logs. Filled form drafts may be stored on
+the device; confirmed tenancy details use normal property-access protections.
+Separately uploading an agreement as a tenancy record uses private storage.
+
+Anthropic's standard API retention is up to 30 days, with exceptions including
+legal requirements and usage-policy enforcement. This is not zero retention.
+See [Anthropic's retention policy](https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data)
+and [privacy policy](https://www.anthropic.com/legal/privacy).
+Account-linked daily attempt counters enforce limits without agreement text;
+old counters are pruned on subsequent successful quota claims.
+
 Roomable uses Supabase for authentication, database storage, private document storage and optional usage sharing. If you choose Google or Apple sign-in, that provider processes the sign-in according to its own privacy policy. Roomable receives only the account information required to authenticate you. Google's sign-in software may process limited identifiers, usage and diagnostic information for authentication-service analytics, as declared in its Apple privacy manifest.
 
 ## Sharing and access
